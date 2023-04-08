@@ -1,0 +1,51 @@
+:root {
+  --bg: rgb(20, 20, 20);
+}
+
+body {
+  /* background-color: var(--bg); */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+#circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* transform: translate(-50%, -50%); */
+  border-radius: 100%;
+  background-color: orange;
+  transition: top left 500ms;
+  animation-timing-function: steps(5, end);
+}
+
+#pacman {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  border-top: 5px solid magenta;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  /* border-radius: 100%; */
+  outline: 1px solid blue;
+}
+
+#canvas {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0, 128, 0, 0.05);
+}
+
+#pacman--body {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+}
+
+#display {
+  color: white;
+}
